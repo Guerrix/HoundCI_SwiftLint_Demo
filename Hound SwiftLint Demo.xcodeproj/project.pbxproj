@@ -12,9 +12,12 @@
 		D8F79D9D20360A250067438D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F79D9B20360A250067438D /* Main.storyboard */; };
 		D8F79D9F20360A250067438D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F79D9E20360A250067438D /* Assets.xcassets */; };
 		D8F79DA220360A250067438D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F79DA020360A250067438D /* LaunchScreen.storyboard */; };
+		E7BBFD3B0D9F47AC8D0BD366 /* Pods_Hound_SwiftLint_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B43FEDEBB8B68188C009BE3B /* Pods_Hound_SwiftLint_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B43FEDEBB8B68188C009BE3B /* Pods_Hound_SwiftLint_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Hound_SwiftLint_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E7F8B7EB30BD9E1066A614 /* Pods-Hound SwiftLint Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hound SwiftLint Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Hound SwiftLint Demo/Pods-Hound SwiftLint Demo.release.xcconfig"; sourceTree = "<group>"; };
 		D8F79D9420360A250067438D /* Hound SwiftLint Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hound SwiftLint Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F79D9720360A250067438D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8F79D9920360A250067438D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D8F79D9E20360A250067438D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F79DA120360A250067438D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F79DA320360A250067438D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE22DD5D6CD263E3EC4ECACE /* Pods-Hound SwiftLint Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Hound SwiftLint Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Hound SwiftLint Demo/Pods-Hound SwiftLint Demo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7BBFD3B0D9F47AC8D0BD366 /* Pods_Hound_SwiftLint_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C3A03547B38F90E5ED72D6D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B43FEDEBB8B68188C009BE3B /* Pods_Hound_SwiftLint_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8F79D8B20360A250067438D = {
 			isa = PBXGroup;
 			children = (
 				D8F79D9620360A250067438D /* Hound SwiftLint Demo */,
 				D8F79D9520360A250067438D /* Products */,
+				E702C8B20A779CDE5DA41960 /* Pods */,
+				C3A03547B38F90E5ED72D6D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = "Hound SwiftLint Demo";
 			sourceTree = "<group>";
 		};
+		E702C8B20A779CDE5DA41960 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EE22DD5D6CD263E3EC4ECACE /* Pods-Hound SwiftLint Demo.debug.xcconfig */,
+				B7E7F8B7EB30BD9E1066A614 /* Pods-Hound SwiftLint Demo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8F79DA620360A250067438D /* Build configuration list for PBXNativeTarget "Hound SwiftLint Demo" */;
 			buildPhases = (
+				590DFF0E5D57A034663F6C13 /* [CP] Check Pods Manifest.lock */,
 				D8F79D9020360A250067438D /* Sources */,
 				D8F79D9120360A250067438D /* Frameworks */,
 				D8F79D9220360A250067438D /* Resources */,
+				D8F79DA920360AA40067438D /* SwiftLint */,
+				C153F33D6FFA8C5B1EC34636 /* [CP] Embed Pods Frameworks */,
+				CFF552DE9C79348F3B43C128 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +158,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		590DFF0E5D57A034663F6C13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Hound SwiftLint Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C153F33D6FFA8C5B1EC34636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hound SwiftLint Demo/Pods-Hound SwiftLint Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CFF552DE9C79348F3B43C128 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Hound SwiftLint Demo/Pods-Hound SwiftLint Demo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F79DA920360AA40067438D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8F79D9020360A250067438D /* Sources */ = {
@@ -272,6 +365,7 @@
 		};
 		D8F79DA720360A250067438D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE22DD5D6CD263E3EC4ECACE /* Pods-Hound SwiftLint Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +381,7 @@
 		};
 		D8F79DA820360A250067438D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7E7F8B7EB30BD9E1066A614 /* Pods-Hound SwiftLint Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
