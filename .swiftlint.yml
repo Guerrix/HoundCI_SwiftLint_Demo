@@ -1,8 +1,11 @@
-included:
-  - .
-only_rules:
-- comma
-
+disabled_rules: # rule identifiers to exclude from running
+  - trailing_whitespace
+opt_in_rules: # some rules are only opt-in
+  - control_statement
+  - empty_count
+  - trailing_newline
+  - colon
+  - comma
 excluded: # paths to ignore during linting. Takes precedence over `included`.
   - Pods
   - SOStoreAdmin/Resources/R.generated.swift
